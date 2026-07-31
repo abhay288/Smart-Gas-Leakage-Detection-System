@@ -55,7 +55,7 @@ Whenever gas concentration exceeds safe limits, the system instantly:
 
 ## 📄 Project Report
 
-- [HTML Report](Smart_Gas_Leakage_Detection_Report.html)
+- [HTML Report](docs/Smart_Gas_Leakage_Detection_Report.html)
 
 ---
 

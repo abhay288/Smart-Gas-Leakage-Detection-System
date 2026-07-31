@@ -1,0 +1,205 @@
+# Project Details
+
+# 1.1 Project Title
+
+**Smart Gas Leakage Detection and Alert System using ESP32 and Blynk IoT**
+
+---
+
+# 1.2 Abstract
+
+The **Smart Gas Leakage Detection and Alert System** is an Internet of Things (IoT)-based safety solution designed to detect harmful gas leakage and immediately alert users. The system uses an **MQ2 Gas Sensor** to continuously monitor the surrounding environment for combustible gases such as LPG, methane, propane, butane, smoke, and hydrogen.
+
+An **ESP32 microcontroller** processes the sensor readings and compares them with predefined threshold values. Based on the gas concentration, the system provides three levels of indication:
+
+* **Green LED:** System is powered ON and operating normally.
+* **Yellow LED:** Warning level when gas concentration begins to increase.
+* **Red LED:** Danger level when gas concentration exceeds the safety limit.
+
+During a dangerous gas leak, the system activates a **buzzer** to warn nearby people and simultaneously sends real-time gas readings and notifications to the **Blynk IoT mobile application** through Wi-Fi.
+
+This project provides an affordable, portable, and efficient gas monitoring solution suitable for homes, laboratories, industries, restaurants, and commercial kitchens.
+
+---
+
+# 1.3 Objectives
+
+The main objectives of this project are:
+
+* To detect harmful combustible gas leakage.
+* To provide early warning before dangerous gas concentration is reached.
+* To generate audible and visual alerts using LEDs and a buzzer.
+* To monitor gas concentration remotely using the Blynk IoT application.
+* To improve home and industrial safety using IoT technology.
+* To minimize fire accidents caused by gas leakage.
+
+---
+
+# 1.4 Problem Statement
+
+Gas leakage is one of the major causes of domestic and industrial accidents. Many traditional gas detectors only produce a local alarm, which may not be useful if nobody is present nearby.
+
+There is a need for a smart, low-cost gas monitoring system that can:
+
+* Continuously monitor gas concentration.
+* Alert users immediately.
+* Send remote notifications through the Internet.
+* Reduce the chances of fire and explosion.
+
+---
+
+# 1.5 Proposed Solution
+
+The proposed system continuously monitors the environment using an MQ2 gas sensor.
+
+The ESP32 reads the analog sensor value and classifies the gas concentration into three categories:
+
+### Safe Zone
+
+* Green LED ON
+* Yellow LED OFF
+* Red LED OFF
+* Buzzer OFF
+
+### Warning Zone
+
+* Green LED ON
+* Yellow LED ON
+* Red LED OFF
+* Buzzer OFF
+
+### Danger Zone
+
+* Green LED ON
+* Red LED ON
+* Yellow LED OFF
+* Buzzer ON
+* Blynk Notification Sent
+
+The gas value is continuously displayed on the Blynk mobile application for remote monitoring.
+
+---
+
+# 1.6 Components Used
+
+| Component               | Quantity | Purpose             |
+| ----------------------- | -------- | ------------------- |
+| ESP32 Development Board | 1        | Main Controller     |
+| MQ2 Gas Sensor          | 1        | Gas Detection       |
+| Green LED               | 1        | Power Indicator     |
+| Yellow LED              | 1        | Warning Indicator   |
+| Red LED                 | 1        | Danger Indicator    |
+| Active Buzzer           | 1        | Audible Alarm       |
+| 220Ω Resistors          | 3        | Current Limiting    |
+| Breadboard              | 1        | Circuit Assembly    |
+| Jumper Wires            | Several  | Connections         |
+| USB Cable               | 1        | Power & Programming |
+| Wi-Fi Network           | 1        | IoT Communication   |
+
+---
+
+# 1.7 Hardware Description
+
+### ESP32
+
+The ESP32 is a powerful microcontroller with built-in Wi-Fi and Bluetooth. It reads sensor values, processes the data, controls the LEDs and buzzer, and communicates with the Blynk cloud.
+
+### MQ2 Gas Sensor
+
+The MQ2 sensor detects combustible gases including LPG, methane, hydrogen, smoke, and alcohol vapors. It provides an analog voltage proportional to gas concentration.
+
+### LEDs
+
+* **Green LED** indicates that the system is powered ON.
+* **Yellow LED** indicates increasing gas concentration (warning).
+* **Red LED** indicates dangerous gas leakage.
+
+### Active Buzzer
+
+The buzzer generates an audible alarm whenever the gas concentration exceeds the danger threshold.
+
+### Blynk IoT
+
+Blynk enables real-time monitoring through a smartphone. Users can view gas sensor values and receive notifications during gas leakage.
+
+---
+
+# 1.8 Software Used
+
+* Arduino IDE
+* ESP32 Board Package
+* Blynk IoT Platform
+* WiFi Library
+* Blynk Library
+
+---
+
+# 1.9 Working Procedure
+
+1. The ESP32 initializes the Wi-Fi connection and Blynk platform.
+2. The MQ2 sensor continuously measures gas concentration.
+3. The ESP32 reads analog values from the MQ2 sensor.
+4. The measured value is compared with predefined thresholds.
+5. Depending on the gas level:
+
+   * Green LED indicates normal operation.
+   * Yellow LED indicates warning.
+   * Red LED and buzzer indicate danger.
+6. Gas values are sent to the Blynk application.
+7. When dangerous gas is detected, the user receives an instant notification through Blynk.
+
+---
+
+# 1.10 Applications
+
+* Domestic Kitchens
+* LPG Gas Monitoring
+* Hotels and Restaurants
+* Chemical Laboratories
+* Industrial Plants
+* Warehouses
+* Smart Homes
+* Fire Safety Systems
+
+---
+
+# 1.11 Advantages
+
+* Low Cost
+* Easy Installation
+* Portable
+* Wireless Monitoring
+* Fast Gas Detection
+* Real-Time Notifications
+* Easy Maintenance
+* Expandable for Future Enhancements
+
+---
+
+# 1.12 Limitations
+
+* MQ2 cannot identify the exact type of gas.
+* Sensor requires a warm-up period before accurate readings.
+* Wi-Fi is required for remote monitoring.
+* Threshold values must be calibrated for different environments.
+
+---
+
+# 1.13 Future Enhancements
+
+* WhatsApp Alert using CallMeBot
+* SMS Alert Integration
+* Cloud Data Storage
+* Graph History and Analytics
+* Battery Backup
+* Automatic Gas Valve Shutoff using Relay
+* OLED Display
+* Temperature and Humidity Monitoring
+* AI-based Gas Prediction
+* Mobile Application Development
+
+---
+
+# 1.14 Conclusion
+
+The Smart Gas Leakage Detection and Alert System successfully detects combustible gases using the MQ2 sensor and alerts users through LEDs, a buzzer, and the Blynk IoT platform. The project demonstrates the practical application of IoT in improving public safety. It is affordable, reliable, and can be enhanced further with cloud services, automatic valve control, and emergency communication features.

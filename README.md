@@ -56,7 +56,7 @@ Whenever gas concentration exceeds safe limits, the system instantly:
 ## 🔌 Circuit Diagram
 
 <p align="center">
-  <img src="circuit/Circuit_Diagram.png" width="900">
+  <img src="Circuit_Diagram.png" width="300">
 </p>
 
 ---

@@ -51,7 +51,16 @@ Whenever gas concentration exceeds safe limits, the system instantly:
 
 ✅ Easy Installation
 
+
+
+## 🔌 Circuit Diagram
+
+<p align="center">
+  <img src="circuit/Circuit_Diagram.png" width="900">
+</p>
+
 ---
+
 
 # 🛠 Hardware Used
 

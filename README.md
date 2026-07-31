@@ -157,19 +157,6 @@ Gas Leakage
 
 ---
 
-# 📸 Project Images
-
-Replace these placeholders with your own images.
-
-```markdown
-images/
-├── Hardware_Setup.jpg
-├── Circuit_Diagram.png
-├── Blynk_Dashboard.jpg
-└── Demo.gif
-```
-
----
 
 # 💻 Installation
 
@@ -189,14 +176,5 @@ Connect to WiFi
 Monitor using Blynk
 ```
 
----
-
-# 👨‍💻 Author
-
-**Abhay Kushwaha**
-
-🎓 B.Tech Computer Science & Engineering
-
-🏫 Allenhouse Institute of Technology, Kanpur
 
 ⭐ If you like this project, don't forget to **Star** this repository.

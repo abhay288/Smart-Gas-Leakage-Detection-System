@@ -51,7 +51,13 @@ Whenever gas concentration exceeds safe limits, the system instantly:
 
 ✅ Easy Installation
 
+---
 
+## 📄 Project Report
+
+- [HTML Report](Smart_Gas_Leakage_Detection_Report.html)
+
+---
 
 ## 🔌 Circuit Diagram
 
@@ -59,8 +65,8 @@ Whenever gas concentration exceeds safe limits, the system instantly:
   <img src="Circuit_Diagram.png" width="300">
 </p>
 
----
 
+---
 
 # 🛠 Hardware Used
 
